@@ -102,6 +102,7 @@ filtered_data_skill.columns = ['Skill Level', 'Count']
 
 with skill.container():
     st.subheader(f"Member Skill Level at {option_course}")
+    st.text("1 = Beginner, 5 = Expert")
     st.bar_chart(filtered_data_skill, x='Skill Level', y='Count')
 
 with conclusion.container():
